@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vino! Osasco — wine bar e restaurante na Vila Yara</title>
+  <meta name="description" content="Centenas de vinhos em taça ou garrafa, preço da taça proporcional e pratos para compartilhar. Vila Yara, Osasco. Reserve pelo WhatsApp.">
+  <link rel="canonical" href="https://{{DOMINIO}}/">
+  <meta name="theme-color" content="#700D2C">
+  <!-- DEMO:INICIO -->
+  <meta name="robots" content="noindex,nofollow">
+  <!-- DEMO:FIM -->
+
+  <link rel="icon" href="assets/icons/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/barlow-semi-condensed-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/barlow-semi-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Vino! Osasco">
+  <meta property="og:title" content="Vino! Osasco — wine bar e restaurante na Vila Yara">
+  <meta property="og:description" content="Centenas de vinhos em taça ou garrafa, preço da taça proporcional e pratos para compartilhar. Vila Yara, Osasco. Reserve pelo WhatsApp.">
+  <meta property="og:url" content="https://{{DOMINIO}}/">
+  <meta property="og:image" content="https://{{DOMINIO}}/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <link rel="stylesheet" href="assets/css/styles.css?v=202610281355">
+  <script src="assets/js/main.js?v=202610281355" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Vino! Osasco",
+    "url": "https://{{DOMINIO}}/",
+    "image": "https://{{DOMINIO}}/assets/img/og-image.jpg",
+    "logo": "https://{{DOMINIO}}/assets/img/logo.webp",
+    "telephone": "+5511965905788",
+    "servesCuisine": ["Italiana", "Contemporânea"],
+    "acceptsReservations": true,
+    "menu": "https://drive.google.com/file/d/1nzFaPYiHAt6ojMJx6roJNDS50UHPPpRy/view",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Dr. Paulo Ferraz da Costa Aguiar, 139 - Vila Yara",
+      "addressLocality": "Osasco",
+      "addressRegion": "SP",
+      "postalCode": "06020-012",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "18:00",
+        "closes": "23:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "12:00",
+        "closes": "16:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "18:00",
+        "closes": "23:30"
+      }
+    ],
+    "sameAs": ["https://www.instagram.com/vinoosasco/", "https://www.facebook.com/vinoosaco"]
+  }
+  </script>
+</head>
+<body id="topo" class="bg-fundo text-texto font-corpo text-lg antialiased">
+  <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[70] focus:bg-fundo focus:px-4 focus:py-2 focus:rounded-marca">Pular para o conteúdo</a>
+
+  <!-- Filtro que deixa a borda das manchas de taça irregular -->
+  <svg width="0" height="0" class="absolute" aria-hidden="true" focusable="false">
+    <filter id="borda-aspera"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="7"/></filter>
+  </svg>
+
+<!-- SECTION: header -->
+<header class="sticky top-0 z-40 border-b border-marca/15 bg-fundo/95 backdrop-blur">
+  <div class="container-lp flex h-16 items-center justify-between gap-4 md:h-20">
+    <a href="#topo" class="flex shrink-0 items-center" aria-label="Vino! Osasco, voltar ao início">
+      <img src="assets/img/logo.webp" alt="Vino! Osasco" width="755" height="479" class="h-11 w-auto md:h-14">
+    </a>
+
+    <nav aria-label="Principal" class="hidden lg:block">
+      <ul class="flex items-center gap-8 text-base font-semibold">
+        <li><a href="#sobre" class="hover:text-acento">O Vino!</a></li>
+        <li><a href="#cardapio" class="hover:text-acento">Cardápio</a></li>
+        <li><a href="#galeria" class="hover:text-acento">Você no Vino!</a></li>
+        <li><a href="#depoimentos" class="hover:text-acento">Avaliações</a></li>
+        <li><a href="#localizacao" class="hover:text-acento">Como chegar</a></li>
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-1 sm:gap-2">
+      <a href="https://www.instagram.com/vinoosasco/" target="_blank" rel="noopener" class="icone-btn text-marca hover:bg-superficie"
+         aria-label="Instagram do Vino! Osasco" data-track="instagram" data-origem="header">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://wa.me/5511965905788?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20reservar%20uma%20mesa%20no%20Vino!%20Osasco." target="_blank" rel="noopener"
+         class="btn btn-whatsapp uppercase tracking-wide" aria-label="Reservar mesa pelo WhatsApp" data-track="whatsapp" data-origem="header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        <span class="hidden sm:inline">Reservar</span>
+      </a>
+    </div>
+  </div>
+</header>
+<!-- /SECTION: header -->
+
+<main id="conteudo">
+<!-- SECTION: hero -->
+<!-- Protótipo: foto do Instagram. Antes da entrega, trocar por foto original em alta (checklist-imagens.md). -->
+<section id="inicio" class="bg-vermelho text-creme" aria-labelledby="hero-titulo">
+  <div class="container-lp grid gap-10 pt-10 pb-14 md:pt-16 md:pb-20 lg:grid-cols-12 lg:items-center lg:gap-12">
+    <div class="lg:col-span-7">
+      <img src="assets/img/logo-creme.webp" alt="" width="755" height="479" class="w-56 md:w-80 lg:w-[24rem]">
+      <h1 id="hero-titulo" class="mt-8 max-w-[18ch] text-4xl leading-[1.02] font-extrabold text-balance md:text-5xl lg:text-[3.6rem]">
+        <span class="sr-only">Vino! Osasco: </span>Um lugar para viver o mundo de taça em taça.
+      </h1>
+      <p class="mt-6 max-w-[52ch] text-lg leading-relaxed md:text-xl">
+        Wine bar e restaurante na Vila Yara. Centenas de vinhos em taça ou garrafa, escolhidos direto da estante, e pratos em porções para dividir com a mesa.
+      </p>
+      <div class="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
+        <a href="https://wa.me/5511965905788?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20reservar%20uma%20mesa%20no%20Vino!%20Osasco." target="_blank" rel="noopener"
+           class="btn btn-claro btn-lg uppercase tracking-wide" data-track="whatsapp" data-origem="hero">Reservar mesa pelo WhatsApp</a>
+        <a href="#cardapio" class="font-semibold underline decoration-2 underline-offset-4 hover:decoration-4">Ver o cardápio</a>
+      </div>
+      <p class="mt-8 text-base">Ter a sex, 18h às 23h30 · Sáb, 12h às 16h e 18h às 23h30</p>
+    </div>
+
+    <img src="assets/img/hero-1600.webp"
+         srcset="assets/img/hero-800.webp 800w, assets/img/hero-1600.webp 1080w"
+         sizes="(min-width: 1024px) 34vw, 100vw"
+         width="1080" height="1922"
+         alt="Risoto servido em prato de cerâmica, finalizado com um ramo de alecrim"
+         fetchpriority="high"
+         class="foto-arco aspect-[4/5] w-full object-cover sm:aspect-[3/4] lg:col-span-5">
+  </div>
+</section>
+<!-- /SECTION: hero -->
+
+<!-- SECTION: sobre -->
+<section id="sobre" class="relative overflow-hidden py-16 md:py-24" aria-labelledby="sobre-titulo">
+  <div class="marca-dagua-logo pointer-events-none absolute -top-10 -right-24 h-[22rem] w-[34rem] md:h-[30rem] md:w-[46rem]" aria-hidden="true"></div>
+
+  <div class="container-lp relative grid gap-12 lg:grid-cols-12 lg:items-end">
+    <div class="lg:col-span-7">
+      <h2 id="sobre-titulo" class="text-4xl leading-none font-extrabold uppercase md:text-6xl">A regra é fugir à regra!</h2>
+      <p class="mt-8 max-w-[44ch] text-xl leading-snug font-semibold md:text-2xl">
+        No Vino! você pode e deve beber aquilo que estiver com vontade, sem regras, sem formalidades e sem preconceitos!
+      </p>
+      <div class="fio mt-8" aria-hidden="true"></div>
+      <div class="mt-8 max-w-[60ch] space-y-4 leading-relaxed text-texto-suave">
+        <p>Os vinhos ficam expostos nas estantes, prontos para você escolher. Vá até a adega, pegue o rótulo que chamou sua atenção e decida se quer a garrafa ou só uma taça.</p>
+        <p>Os pratos vêm em porções que permitem provar mais de uma opção e compartilhar. Assim dá para harmonizar cada um com um vinho diferente ao longo da mesma refeição.</p>
+      </div>
+    </div>
+
+    <img src="assets/img/taca-ilustrada.webp" alt="" width="618" height="1014" loading="lazy" decoding="async"
+         class="mx-auto hidden w-56 lg:col-span-4 lg:col-start-9 lg:block">
+  </div>
+</section>
+<!-- /SECTION: sobre -->
+
+<!-- Taça proporcional: o diferencial da rede, com o texto do próprio cardápio -->
+<section class="bg-marca py-14 text-creme md:py-20" aria-labelledby="taca-titulo">
+  <div class="container-lp grid gap-8 lg:grid-cols-12 lg:items-center">
+    <h2 id="taca-titulo" class="text-3xl leading-[1.05] font-extrabold text-balance md:text-5xl lg:col-span-8">
+      Aqui o preço da taça é proporcional à quantidade de vinho retirada da garrafa.
+    </h2>
+    <p class="max-w-[40ch] text-xl leading-snug lg:col-span-4">
+      Você pode tomar quantas taças quiser, sem pagar a mais por isso. Simples, justo e acessível para todos!
+    </p>
+  </div>
+</section>
+
+<!-- SECTION: servicos -->
+<!-- Cardápio 2026 da unidade: nomes, descrições e sugestões copiados do cardápio. Sem preços (decisão de 28/10/2026). -->
+<section id="cardapio" class="py-16 md:py-24" aria-labelledby="cardapio-titulo">
+  <div class="container-lp">
+    <div class="grid gap-6 md:grid-cols-12 md:items-end">
+      <div class="md:col-span-7">
+        <h2 id="cardapio-titulo" class="text-4xl leading-none font-extrabold uppercase md:text-6xl">Cardápio</h2>
+        <p class="mt-5 max-w-[56ch] leading-relaxed text-texto-suave">
+          Uma amostra do que sai da cozinha. Cada prato traz uma sugestão de vinho para acompanhar, mas a escolha é sempre sua.
+        </p>
+      </div>
+      <p class="text-base md:col-span-5 md:text-right">
+        <span class="font-semibold text-vegetariano"><span aria-hidden="true">✓</span> Pratos vegetarianos.</span>
+      </p>
+    </div>
+
+    <!-- Bloco: Para compartilhar -->
+    <div class="mt-16 grid gap-10 lg:grid-cols-12">
+      <div class="lg:col-span-7">
+        <div class="flex items-end justify-between gap-6">
+          <svg class="mancha h-14 w-14 shrink-0 text-marca md:h-16 md:w-16" viewBox="0 0 100 100" aria-hidden="true"><g filter="url(#borda-aspera)"><circle class="anel" cx="50" cy="50" r="38" pathLength="100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" transform="rotate(-60 50 50)"/></g></svg>
+          <h3 class="titulo-cardapio grow"><span class="fino">Para</span> compartilhar</h3>
+        </div>
+        <p class="mt-8 hidden text-right text-sm font-extrabold tracking-wide uppercase md:block">Sugestão, não obrigação!</p>
+        <ul class="mt-3">
+          <li class="linha-prato border-t border-marca/20 py-5">
+            <div>
+              <h4 class="font-extrabold uppercase">Burrata! <span class="text-vegetariano" role="img" aria-label="vegetariano">✓</span></h4>
+              <p class="mt-1 text-base leading-snug text-texto-suave">Burrata fresca cremosa temperada com azeite, flor de sal e pimenta preta, servida com tomate cereja e pesto. Acompanha nossa focaccia.</p>
+            </div>
+            <p class="sugestao flex gap-2 text-base leading-snug"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M7 3h10l-.4 5.5a4.6 4.6 0 0 1-9.2 0L7 3Z"/><path d="M12 13.2V20M8.5 20.5h7"/></svg><span><span class="sr-only">Sugestão de vinho: </span>Vinhos brancos Chardonnay ou Pinot Grigio.</span></p>
+          </li>
+          <li class="linha-prato border-t border-marca/20 py-5">
+            <div>
+              <h4 class="font-extrabold uppercase">Camarões al pil pil!</h4>
+              <p class="mt-1 text-base leading-snug text-texto-suave">Camarões puxados no azeite, com alho, cebola chalota e pimenta dedo de moça. Acompanha nossa focaccia.</p>
+            </div>
+            <p class="sugestao flex gap-2 text-base leading-snug"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M7 3h10l-.4 5.5a4.6 4.6 0 0 1-9.2 0L7 3Z"/><path d="M12 13.2V20M8.5 20.5h7"/></svg><span><span class="sr-only">Sugestão de vinho: </span>Vinhos brancos Torrontés, Riesling ou brancos do Loire.</span></p>
+          </li>
+          <li class="linha-prato border-y border-marca/20 py-5">
+            <div>
+              <h4 class="font-extrabold uppercase">Arancini de cogumelos e nozes! <span class="text-vegetariano" role="img" aria-label="vegetariano">✓</span></h4>
+              <p class="mt-1 text-base leading-snug text-texto-suave">Bolinhos de risoto à base de cogumelos, nozes, queijo brie e açafrão, servidos com fonduta de parmesão.</p>
+            </div>
+            <p class="sugestao flex gap-2 text-base leading-snug"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M7 3h10l-.4 5.5a4.6 4.6 0 0 1-9.2 0L7 3Z"/><path d="M12 13.2V20M8.5 20.5h7"/></svg><span><span class="sr-only">Sugestão de vinho: </span>Vinhos brancos Chardonnay amadeirados ou Viognier.</span></p>
+          </li>
+        </ul>
+      </div>
+      <figure class="self-end lg:col-span-5">
+        <img src="assets/img/prato-camaroes-al-pil-pil.webp" srcset="assets/img/prato-camaroes-al-pil-pil-600.webp 600w, assets/img/prato-camaroes-al-pil-pil.webp 1200w"
+             sizes="(min-width: 1024px) 28rem, 100vw" width="1200" height="499" alt="Camarões al pil pil com cebola chalota"
+             loading="lazy" decoding="async" class="foto-curva aspect-[16/9] w-full object-cover">
+        <figcaption class="mt-2 text-right text-sm text-texto-suave">Camarões al pil pil! Imagem meramente ilustrativa.</figcaption>
+      </figure>
+    </div>
+
+    <!-- Bloco: Risotos -->
+    <div class="mt-20 grid gap-10 lg:grid-cols-12">
+      <figure class="order-last self-end lg:order-first lg:col-span-5">
+        <img src="assets/img/prato-risoto-limoncello.webp" srcset="assets/img/prato-risoto-limoncello-600.webp 600w, assets/img/prato-risoto-limoncello.webp 1200w"
+             sizes="(min-width: 1024px) 28rem, 100vw" width="1200" height="743" alt="Risoto de licor limoncello com camarão"
+             loading="lazy" decoding="async" class="foto-curva aspect-[16/10] w-full object-cover">
+        <figcaption class="mt-2 text-sm text-texto-suave">Risoto licor limoncello! Imagem meramente ilustrativa.</figcaption>
+      </figure>
+      <div class="lg:col-span-7">
+        <div class="flex items-end justify-between gap-6">
+          <svg class="mancha h-14 w-14 shrink-0 text-marca md:h-16 md:w-16" viewBox="0 0 100 100" aria-hidden="true"><g filter="url(#borda-aspera)"><circle class="anel" style="--fim: 30" cx="50" cy="50" r="38" pathLength="100" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" transform="rotate(60 50 50)"/><circle cx="80" cy="20" r="3.5" fill="currentColor"/><circle cx="88" cy="30" r="2" fill="currentColor"/></g></svg>
+          <h3 class="titulo-cardapio grow">Risotos</h3>
+        </div>
+        <p class="mt-6 max-w-[56ch] text-base leading-snug text-texto-suave">Todos levam a base clássica de risoto al parmigiano, feito com arroz carnaroli al dente, manteiga, vinho branco e queijo parmesão.</p>
+        <p class="mt-6 hidden text-right text-sm font-extrabold tracking-wide uppercase md:block">Sugestão, não obrigação!</p>
+        <ul class="mt-3">
+          <li class="linha-prato border-t border-marca/20 py-5">
+            <div>
+              <h4 class="font-extrabold uppercase">Licor limoncello!</h4>
+              <p class="mt-1 text-base leading-snug text-texto-suave">Um cremoso risoto de licor limoncello, com camarões e lulas salteadas.</p>
+            </div>
+            <p class="sugestao flex gap-2 text-base leading-snug"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M7 3h10l-.4 5.5a4.6 4.6 0 0 1-9.2 0L7 3Z"/><path d="M12 13.2V20M8.5 20.5h7"/></svg><span><span class="sr-only">Sugestão de vinho: </span>Vinhos brancos Malvasia ou Gewurztraminer.</span></p>
+          </li>
+          <li class="linha-prato border-t border-marca/20 py-5">
+            <div>
+              <h4 class="font-extrabold uppercase">Queijo gorgonzola com pera e nozes! <span class="text-vegetariano" role="img" aria-label="vegetariano">✓</span></h4>
+              <p class="mt-1 text-base leading-snug text-texto-suave">Um cremoso risoto de gorgonzola com pera em calda e nozes.</p>
+            </div>
+            <p class="sugestao flex gap-2 text-base leading-snug"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M7 3h10l-.4 5.5a4.6 4.6 0 0 1-9.2 0L7 3Z"/><path d="M12 13.2V20M8.5 20.5h7"/></svg><span><span class="sr-only">Sugestão de vinho: </span>Vinhos brancos Sauvignon Blanc ou Riesling.</span></p>
+          </li>
+          <li class="linha-prato border-y border-marca/20 py-5">
+            <div>
+              <h4 class="font-extrabold uppercase">Bacalhau ao Porto!</h4>
+              <p class="mt-1 text-base leading-snug text-texto-suave">Um cremoso risoto de bacalhau desfiado, alho-poró e pimentões em azeite extra virgem.</p>
+            </div>
+            <p class="sugestao flex gap-2 text-base leading-snug"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M7 3h10l-.4 5.5a4.6 4.6 0 0 1-9.2 0L7 3Z"/><path d="M12 13.2V20M8.5 20.5h7"/></svg><span><span class="sr-only">Sugestão de vinho: </span>Vinhos brancos portugueses do Alentejo ou Douro, tintos leves, sem taninos.</span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bloco: Individuais -->
+    <div class="mt-20 grid gap-10 lg:grid-cols-12">
+      <div class="lg:col-span-7">
+        <div class="flex items-end justify-between gap-6">
+          <svg class="mancha h-14 w-14 shrink-0 text-marca md:h-16 md:w-16" viewBox="0 0 100 100" aria-hidden="true"><g filter="url(#borda-aspera)"><circle class="anel" cx="50" cy="50" r="38" pathLength="100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" transform="rotate(150 50 50)"/></g></svg>
+          <h3 class="titulo-cardapio grow">Individuais</h3>
+        </div>
+        <p class="mt-8 hidden text-right text-sm font-extrabold tracking-wide uppercase md:block">Sugestão, não obrigação!</p>
+        <ul class="mt-3">
+          <li class="linha-prato border-t border-marca/20 py-5">
+            <div>
+              <h4 class="font-extrabold uppercase">Polenta com ragú de costela e farofinha de alho!</h4>
+              <p class="mt-1 text-base leading-snug text-texto-suave">Polenta cremosa de milho, com creme de leite fresco e queijo parmesão, acompanhada de ragú de costela desfiada e farofinha de alho.</p>
+            </div>
+            <p class="sugestao flex gap-2 text-base leading-snug"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M7 3h10l-.4 5.5a4.6 4.6 0 0 1-9.2 0L7 3Z"/><path d="M12 13.2V20M8.5 20.5h7"/></svg><span><span class="sr-only">Sugestão de vinho: </span>Vinhos tintos Cabernet Franc ou Merlot.</span></p>
+          </li>
+          <li class="linha-prato border-t border-marca/20 py-5">
+            <div>
+              <h4 class="font-extrabold uppercase">Entrecôte ao molho poivre!</h4>
+              <p class="mt-1 text-base leading-snug text-texto-suave">Entrecôte grelhado fatiado com molho poivre, servido com batatas rústicas.</p>
+            </div>
+            <p class="sugestao flex gap-2 text-base leading-snug"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M7 3h10l-.4 5.5a4.6 4.6 0 0 1-9.2 0L7 3Z"/><path d="M12 13.2V20M8.5 20.5h7"/></svg><span><span class="sr-only">Sugestão de vinho: </span>Um Bordeaux com base Cabernet Sauvignon, um Douro jovem ou um Tannat uruguaio.</span></p>
+          </li>
+          <li class="linha-prato border-y border-marca/20 py-5">
+            <div>
+              <h4 class="font-extrabold uppercase">Gnocchi al forno com brie! <span class="text-vegetariano" role="img" aria-label="vegetariano">✓</span></h4>
+              <p class="mt-1 text-base leading-snug text-texto-suave">Gnocchi artesanal gratinado com fonduta de parmesão com brie assado.</p>
+            </div>
+            <p class="sugestao flex gap-2 text-base leading-snug"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M7 3h10l-.4 5.5a4.6 4.6 0 0 1-9.2 0L7 3Z"/><path d="M12 13.2V20M8.5 20.5h7"/></svg><span><span class="sr-only">Sugestão de vinho: </span>Vinhos tintos Bordeaux jovens ou Borgonha Villages.</span></p>
+          </li>
+        </ul>
+      </div>
+      <figure class="self-end lg:col-span-5">
+        <img src="assets/img/prato-entrecote-poivre.webp" srcset="assets/img/prato-entrecote-poivre-600.webp 600w, assets/img/prato-entrecote-poivre.webp 1200w"
+             sizes="(min-width: 1024px) 28rem, 100vw" width="1200" height="629" alt="Entrecôte fatiado ao molho poivre com batatas rústicas"
+             loading="lazy" decoding="async" class="foto-curva aspect-[16/10] w-full object-cover">
+        <figcaption class="mt-2 text-right text-sm text-texto-suave">Entrecôte ao molho poivre! Imagem meramente ilustrativa.</figcaption>
+      </figure>
+    </div>
+
+    <!-- Bloco: Para adoçar -->
+    <div class="mt-20 grid gap-10 lg:grid-cols-12">
+      <figure class="order-last self-end lg:order-first lg:col-span-5">
+        <img src="assets/img/prato-brownie-nutella.webp" srcset="assets/img/prato-brownie-nutella-600.webp 600w, assets/img/prato-brownie-nutella.webp 1200w"
+             sizes="(min-width: 1024px) 28rem, 100vw" width="1200" height="1044" alt="Brownie de chocolate com calda de Nutella e nozes"
+             loading="lazy" decoding="async" class="foto-curva aspect-[16/11] w-full object-cover">
+        <figcaption class="mt-2 text-sm text-texto-suave">Brownie de chocolate e calda de Nutella! Imagem meramente ilustrativa.</figcaption>
+      </figure>
+      <div class="lg:col-span-7">
+        <div class="flex items-end justify-between gap-6">
+          <svg class="mancha h-14 w-14 shrink-0 text-marca md:h-16 md:w-16" viewBox="0 0 100 100" aria-hidden="true"><g filter="url(#borda-aspera)"><circle class="anel" style="--fim: 30" cx="50" cy="50" r="38" pathLength="100" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" transform="rotate(60 50 50)"/><circle cx="80" cy="20" r="3.5" fill="currentColor"/><circle cx="88" cy="30" r="2" fill="currentColor"/></g></svg>
+          <h3 class="titulo-cardapio grow"><span class="fino">Para</span> adoçar</h3>
+        </div>
+        <p class="mt-8 hidden text-right text-sm font-extrabold tracking-wide uppercase md:block">Sugestão, não obrigação!</p>
+        <ul class="mt-3">
+          <li class="linha-prato border-t border-marca/20 py-5">
+            <h4 class="font-extrabold uppercase">Brownie de chocolate e calda de Nutella! <span class="text-vegetariano" role="img" aria-label="vegetariano">✓</span></h4>
+            <p class="sugestao flex gap-2 text-base leading-snug"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M7 3h10l-.4 5.5a4.6 4.6 0 0 1-9.2 0L7 3Z"/><path d="M12 13.2V20M8.5 20.5h7"/></svg><span><span class="sr-only">Sugestão de vinho: </span>Vinhos do Porto Ruby ou Tawny.</span></p>
+          </li>
+          <li class="linha-prato border-t border-marca/20 py-5">
+            <h4 class="font-extrabold uppercase">Sorvete de manjericão com coulis de morango ao vinho branco!</h4>
+            <p class="sugestao flex gap-2 text-base leading-snug"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M7 3h10l-.4 5.5a4.6 4.6 0 0 1-9.2 0L7 3Z"/><path d="M12 13.2V20M8.5 20.5h7"/></svg><span><span class="sr-only">Sugestão de vinho: </span>Espumantes Moscatel.</span></p>
+          </li>
+          <li class="linha-prato border-y border-marca/20 py-5">
+            <h4 class="font-extrabold uppercase">Cheesecake com morangos em calda!</h4>
+            <p class="sugestao flex gap-2 text-base leading-snug"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M7 3h10l-.4 5.5a4.6 4.6 0 0 1-9.2 0L7 3Z"/><path d="M12 13.2V20M8.5 20.5h7"/></svg><span><span class="sr-only">Sugestão de vinho: </span>Vinhos de colheita tardia ou Riesling com boa acidez.</span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-16 flex flex-col items-start gap-5 border-t-4 border-marca pt-8 md:flex-row md:items-center md:justify-between">
+      <p class="max-w-[52ch] leading-snug">O cardápio completo tem ainda frios, queijos, ceviche, tartares, massas, carnes e mais sobremesas.</p>
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-4">
+        <a href="https://drive.google.com/file/d/1nzFaPYiHAt6ojMJx6roJNDS50UHPPpRy/view" target="_blank" rel="noopener"
+           class="font-semibold underline decoration-2 underline-offset-4 hover:text-acento">Ver o cardápio completo (PDF)</a>
+        <a href="https://wa.me/5511965905788?text=Ol%C3%A1!%20Vi%20o%20card%C3%A1pio%20no%20site%20e%20gostaria%20de%20reservar%20uma%20mesa." target="_blank" rel="noopener"
+           class="btn btn-whatsapp uppercase tracking-wide" data-track="whatsapp" data-origem="servico-cardapio">Reservar mesa</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /SECTION: servicos -->
+
+<!-- SECTION: galeria -->
+<!-- Série "Você no Vino! Osasco" do Instagram da casa. Proporção 3/4 (a do post) para não cortar a legenda da arte.
+     8 fotos → grid-cols-2 lg:grid-cols-4 -->
+<section id="galeria" class="bg-superficie py-16 md:py-24" aria-labelledby="galeria-titulo">
+  <div class="container-lp">
+    <div class="grid gap-6 md:grid-cols-12 md:items-end">
+      <h2 id="galeria-titulo" class="text-4xl leading-none font-extrabold uppercase md:col-span-7 md:text-6xl">Você no Vino! Osasco</h2>
+      <p class="max-w-[48ch] leading-relaxed text-texto-suave md:col-span-5">Aniversários, encontros de família e noites a dois. Uma parte das fotos que a casa publica no Instagram.</p>
+    </div>
+
+    <ul class="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4" aria-label="Fotos de clientes no Vino! Osasco">
+      <li><figure><img src="assets/img/voce-no-vino-01-600.webp" srcset="assets/img/voce-no-vino-01-600.webp 600w, assets/img/voce-no-vino-01.webp 1080w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="1080" height="1440" alt="Casal abraçado em frente à adega" loading="lazy" decoding="async" class="aspect-[3/4] w-full object-cover"></figure></li>
+      <li><figure><img src="assets/img/voce-no-vino-02-600.webp" srcset="assets/img/voce-no-vino-02-600.webp 600w, assets/img/voce-no-vino-02.webp 1080w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="1080" height="1440" alt="Grupo de amigas em frente ao neon Rolhômetro" loading="lazy" decoding="async" class="aspect-[3/4] w-full object-cover"></figure></li>
+      <li><figure><img src="assets/img/voce-no-vino-03-600.webp" srcset="assets/img/voce-no-vino-03-600.webp 600w, assets/img/voce-no-vino-03.webp 1080w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="1080" height="1440" alt="Mesa comprida de amigos brindando" loading="lazy" decoding="async" class="aspect-[3/4] w-full object-cover"></figure></li>
+      <li><figure><img src="assets/img/voce-no-vino-04-600.webp" srcset="assets/img/voce-no-vino-04-600.webp 600w, assets/img/voce-no-vino-04.webp 1080w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="1080" height="1440" alt="Aniversariante assoprando as velas com balões na mesa" loading="lazy" decoding="async" class="aspect-[3/4] w-full object-cover"></figure></li>
+      <li><figure><img src="assets/img/voce-no-vino-05-600.webp" srcset="assets/img/voce-no-vino-05-600.webp 600w, assets/img/voce-no-vino-05.webp 1080w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="1080" height="1440" alt="Família reunida sob o neon All we need is vino!" loading="lazy" decoding="async" class="aspect-[3/4] w-full object-cover"></figure></li>
+      <li><figure><img src="assets/img/voce-no-vino-06-600.webp" srcset="assets/img/voce-no-vino-06-600.webp 600w, assets/img/voce-no-vino-06.webp 1080w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="1080" height="1440" alt="Família em frente às estantes de vinho" loading="lazy" decoding="async" class="aspect-[3/4] w-full object-cover"></figure></li>
+      <li><figure><img src="assets/img/voce-no-vino-07-600.webp" srcset="assets/img/voce-no-vino-07-600.webp 600w, assets/img/voce-no-vino-07.webp 1080w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="1080" height="1440" alt="Grupo de amigos sob o neon All we need is vino!" loading="lazy" decoding="async" class="aspect-[3/4] w-full object-cover"></figure></li>
+      <li><figure><img src="assets/img/voce-no-vino-08-600.webp" srcset="assets/img/voce-no-vino-08-600.webp 600w, assets/img/voce-no-vino-08.webp 1080w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="1080" height="1440" alt="Grupo comemorando em frente ao neon Rolhômetro" loading="lazy" decoding="async" class="aspect-[3/4] w-full object-cover"></figure></li>
+    </ul>
+  </div>
+</section>
+<!-- /SECTION: galeria -->
+
+<!-- SECTION: depoimentos -->
+<!-- Avaliações reais do perfil do Google, texto sem edição (cortes só com "…"). Origem registrada no briefing.md. -->
+<section id="depoimentos" class="py-16 md:py-24" aria-labelledby="depoimentos-titulo">
+  <div class="container-lp">
+    <div class="grid gap-6 md:grid-cols-12 md:items-end">
+      <h2 id="depoimentos-titulo" class="text-4xl leading-none font-extrabold uppercase md:col-span-7 md:text-6xl">Quem já brindou aqui</h2>
+      <p class="text-xl leading-snug font-semibold md:col-span-5 md:text-right">Nota 4,9 no Google, com 152 avaliações</p>
+    </div>
+
+    <ul class="mt-12 grid gap-x-10 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+      <li>
+        <figure class="flex h-full flex-col border-t-4 border-marca pt-6">
+          <div class="flex gap-0.5 text-acento" role="img" aria-label="Nota 5 de 5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+          </div>
+          <blockquote class="mt-4 grow leading-relaxed"><p>Comida maravilhosa e o preço das taças permite provar mais de um rótulo. Lugar lindo e romântico.</p></blockquote>
+          <figcaption class="mt-4 font-extrabold uppercase">Victória Coan</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="flex h-full flex-col border-t-4 border-marca pt-6">
+          <div class="flex gap-0.5 text-acento" role="img" aria-label="Nota 5 de 5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+          </div>
+          <blockquote class="mt-4 grow leading-relaxed"><p>Atendimento excelente, comida maravilhosa. A ideia de ir até a adega e escolher o vinho é muito legal. Recomendo demais!</p></blockquote>
+          <figcaption class="mt-4 font-extrabold uppercase">Alexandre A.</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="flex h-full flex-col border-t-4 border-marca pt-6">
+          <div class="flex gap-0.5 text-acento" role="img" aria-label="Nota 5 de 5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+          </div>
+          <blockquote class="mt-4 grow leading-relaxed"><p>… Adoramos a iniciativa de nos oferecer sugestões de vinhos que harmonizariam perfeitamente com nossos pratos, e a experiência de ter taças diferentes para cada prato elevou a refeição a outro patamar. Meu risoto de gorgonzola, pera e nozes estava simplesmente delicioso! …</p></blockquote>
+          <figcaption class="mt-4 font-extrabold uppercase">Paulo Lima</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="flex h-full flex-col border-t-4 border-marca pt-6">
+          <div class="flex gap-0.5 text-acento" role="img" aria-label="Nota 5 de 5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+          </div>
+          <blockquote class="mt-4 grow leading-relaxed"><p>Lugar muito aconchegante e atendimento excelente, sou uma pessoa que não está habituada a beber vinho, mas experimentei várias opções e gostei de todas …</p></blockquote>
+          <figcaption class="mt-4 font-extrabold uppercase">Miguel Souza</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="flex h-full flex-col border-t-4 border-marca pt-6">
+          <div class="flex gap-0.5 text-acento" role="img" aria-label="Nota 5 de 5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+          </div>
+          <blockquote class="mt-4 grow leading-relaxed"><p>Que experiência, que lugar e pessoas maravilhosas. Eles realmente gostam do que fazem. Fui comemorar meu 1 ano de namoro e foi incrível!!! Recomendo</p></blockquote>
+          <figcaption class="mt-4 font-extrabold uppercase">Paloma Ferreira</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="flex h-full flex-col border-t-4 border-marca pt-6">
+          <div class="flex gap-0.5 text-acento" role="img" aria-label="Nota 5 de 5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>
+          </div>
+          <blockquote class="mt-4 grow leading-relaxed"><p>Entradas e pratos principais muito bons! Boa variedade de vinhos e a proposta de popularizar e desmistificar o vinho é sensacional! Voltaremos! …</p></blockquote>
+          <figcaption class="mt-4 font-extrabold uppercase">Augusto Miotto Lima</figcaption>
+        </figure>
+      </li>
+    </ul>
+
+    <a href="https://share.google/zAFMfCAlUUGjDS7hw" target="_blank" rel="noopener"
+       class="mt-12 inline-block font-semibold underline decoration-2 underline-offset-4 hover:text-acento"
+       data-track="avaliar-google" data-origem="depoimentos">Ver todas as avaliações no Google</a>
+  </div>
+</section>
+<!-- /SECTION: depoimentos -->
+
+<!-- SECTION: cta-intermediario -->
+<section class="bg-vermelho py-14 text-creme md:py-20" aria-labelledby="cta-meio-titulo">
+  <div class="container-lp grid gap-8 lg:grid-cols-12 lg:items-center">
+    <div class="lg:col-span-8">
+      <h2 id="cta-meio-titulo" class="text-3xl leading-[1.05] font-extrabold text-balance md:text-5xl">Aniversário, encontro em família ou noite a dois?</h2>
+      <p class="mt-4 max-w-[56ch] text-lg leading-relaxed">Conte no WhatsApp o dia, o horário e quantas pessoas vêm, e a equipe reserva a sua mesa. No salão, peça para entrar no Clube Vino: você ganha pontos a cada visita e troca por benefícios.</p>
+    </div>
+    <a href="https://wa.me/5511965905788?text=Ol%C3%A1!%20Quero%20reservar%20uma%20mesa%20para%20uma%20comemora%C3%A7%C3%A3o.%20Somos%20__%20pessoas." target="_blank" rel="noopener"
+       class="btn btn-claro btn-lg justify-self-start uppercase tracking-wide lg:col-span-4 lg:justify-self-end" data-track="whatsapp" data-origem="cta-meio">Reservar mesa pelo WhatsApp</a>
+  </div>
+</section>
+<!-- /SECTION: cta-intermediario -->
+
+<!-- SECTION: instagram -->
+<section class="bg-superficie py-14 md:py-20" aria-labelledby="instagram-titulo">
+  <div class="container-lp flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
+    <div>
+      <h2 id="instagram-titulo" class="text-3xl leading-none font-extrabold uppercase md:text-4xl">Siga @vinoosasco</h2>
+      <p class="mt-3 max-w-[52ch] leading-relaxed text-texto-suave">Agenda da casa, pratos novos e as fotos da série Você no Vino! Osasco.</p>
+    </div>
+    <a href="https://www.instagram.com/vinoosasco/" target="_blank" rel="noopener" class="btn btn-contorno btn-lg shrink-0 hover:bg-fundo"
+       data-track="instagram" data-origem="secao-instagram">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      Siga @vinoosasco no Instagram
+    </a>
+  </div>
+</section>
+<!-- /SECTION: instagram -->
+
+<!-- SECTION: localizacao -->
+<!-- (b) "Avalie-nos no Google" removido: falta o link de avaliação (place_id) do cliente. -->
+<section id="localizacao" class="py-16 md:py-24" aria-labelledby="localizacao-titulo">
+  <div class="container-lp">
+    <h2 id="localizacao-titulo" class="titulo-cardapio">Onde estamos</h2>
+
+    <div class="mt-12 grid gap-10 lg:grid-cols-5">
+      <div class="lg:col-span-2">
+        <address class="not-italic">
+          <img src="assets/img/logo.webp" alt="Vino! Osasco" width="755" height="479" loading="lazy" decoding="async" class="h-16 w-auto">
+          <p class="mt-4 leading-snug">R. Dr. Paulo Ferraz da Costa Aguiar, 139<br>Vila Yara, Osasco – SP<br>06020-012</p>
+        </address>
+
+        <h3 class="mt-10 font-extrabold uppercase">Horário de funcionamento</h3>
+        <dl class="mt-3 grid grid-cols-[auto_1fr] gap-x-6 gap-y-2 border-t border-marca/20 pt-3">
+          <dt class="font-semibold">Terça a sexta</dt><dd>18h às 23h30</dd>
+          <dt class="font-semibold">Sábado</dt><dd>12h às 16h e 18h às 23h30</dd>
+          <dt class="font-semibold">Domingo e segunda</dt><dd>Fechado</dd>
+        </dl>
+
+        <div class="mt-10 flex flex-wrap gap-3">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Vino!%20Osasco%2C%20R.%20Dr.%20Paulo%20Ferraz%20da%20Costa%20Aguiar%2C%20139%20-%20Vila%20Yara%2C%20Osasco%20-%20SP%2C%2006020-012" target="_blank" rel="noopener" class="btn btn-contorno uppercase tracking-wide hover:bg-superficie"
+             data-track="como-chegar" data-origem="localizacao">Como chegar</a>
+          <a href="https://wa.me/5511965905788?text=Ol%C3%A1!%20Gostaria%20de%20confirmar%20o%20endere%C3%A7o%20e%20o%20hor%C3%A1rio." target="_blank" rel="noopener"
+             class="btn btn-whatsapp uppercase tracking-wide" data-track="whatsapp" data-origem="localizacao">Falar no WhatsApp</a>
+        </div>
+      </div>
+
+      <iframe src="https://www.google.com/maps?q=Vino!%20Osasco%2C%20R.%20Dr.%20Paulo%20Ferraz%20da%20Costa%20Aguiar%2C%20139%20-%20Vila%20Yara%2C%20Osasco%20-%20SP%2C%2006020-012&amp;output=embed"
+              title="Mapa com a localização do Vino! Osasco"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+              class="h-80 w-full border-0 lg:col-span-3 lg:h-full lg:min-h-96"></iframe>
+    </div>
+  </div>
+</section>
+<!-- /SECTION: localizacao -->
+</main>
+
+<!-- SECTION: footer -->
+<footer class="bg-black pt-14 pb-28 text-base text-creme md:pb-10">
+  <div class="container-lp grid gap-10 md:grid-cols-3">
+    <div>
+      <img src="assets/img/logo-creme.webp" alt="Vino! Osasco" width="755" height="479" loading="lazy" decoding="async" class="h-16 w-auto">
+      <address class="mt-5 not-italic leading-snug">R. Dr. Paulo Ferraz da Costa Aguiar, 139 – Vila Yara, Osasco – SP, 06020-012</address>
+      <p class="mt-2 leading-snug">Ter a sex, 18h às 23h30; sáb, 12h às 16h e 18h às 23h30</p>
+    </div>
+
+    <div>
+      <h2 class="font-extrabold uppercase">Contato</h2>
+      <ul class="mt-3 space-y-2">
+        <li><a href="https://wa.me/5511965905788?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20reservar%20uma%20mesa%20no%20Vino!%20Osasco." target="_blank" rel="noopener"
+               class="underline-offset-4 hover:underline" data-track="whatsapp" data-origem="footer">WhatsApp (11) 96590-5788</a></li>
+        <li><a href="https://www.instagram.com/vinoosasco/" target="_blank" rel="noopener" class="underline-offset-4 hover:underline"
+               data-track="instagram" data-origem="footer">Instagram @vinoosasco</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Vino!%20Osasco%2C%20R.%20Dr.%20Paulo%20Ferraz%20da%20Costa%20Aguiar%2C%20139%20-%20Vila%20Yara%2C%20Osasco%20-%20SP%2C%2006020-012" target="_blank" rel="noopener" class="underline-offset-4 hover:underline"
+               data-track="como-chegar" data-origem="footer">Ver no Google Maps</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="font-extrabold uppercase">Informações</h2>
+      <ul class="mt-3 space-y-2">
+        <li><a href="politica-de-privacidade.html" class="underline-offset-4 hover:underline">Política de Privacidade</a></li>
+        <li><button type="button" class="underline-offset-4 hover:underline" data-abrir-consentimento>Preferências de cookies</button></li>
+      </ul>
+      <p class="mt-6 text-sm">Venda e consumo de bebidas alcoólicas proibidos para menores de 18 anos.</p>
+    </div>
+  </div>
+
+  <div class="container-lp mt-10 flex flex-col gap-2 border-t border-creme/20 pt-6 text-sm md:flex-row md:justify-between">
+    <p>© 2026 Vino! Osasco. Unidade da rede Vino!</p>
+    <p>Desenvolvido por <a href="https://underlinelab.com.br" target="_blank" rel="noopener" class="font-semibold underline underline-offset-4">underlinelab.com.br</a></p>
+  </div>
+</footer>
+<!-- /SECTION: footer -->
+
+<!-- SECTION: whatsapp-flutuante -->
+<a href="https://wa.me/5511965905788?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20reservar%20uma%20mesa%20no%20Vino!%20Osasco." target="_blank" rel="noopener"
+   class="wa-flutuante" aria-label="Reservar mesa pelo WhatsApp" data-track="whatsapp" data-origem="flutuante">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+<!-- /SECTION: whatsapp-flutuante -->
+
+<!-- SECTION: consentimento -->
+<!-- Só aparece quando há ga4Id ou metaPixelId no CONFIG do main.js -->
+<div id="consentimento" class="consentimento" role="region" aria-label="Aviso de cookies" hidden>
+  <div class="container-lp flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+    <p class="max-w-prose text-base">
+      Usamos cookies para medir as visitas e o resultado dos nossos anúncios. O site funciona normalmente se você recusar.
+      <a href="politica-de-privacidade.html" class="underline underline-offset-4">Política de Privacidade</a>
+    </p>
+    <div class="flex shrink-0 gap-3">
+      <button type="button" class="btn btn-contorno" data-consentimento="recusar">Recusar</button>
+      <button type="button" class="btn btn-marca" data-consentimento="aceitar">Aceitar</button>
+    </div>
+  </div>
+</div>
+<!-- /SECTION: consentimento -->
+</body>
+</html>

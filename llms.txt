@@ -1,0 +1,21 @@
+# Vino! Osasco
+
+> Wine bar e restaurante em R. Dr. Paulo Ferraz da Costa Aguiar, 139 - Vila Yara, Osasco - SP, 06020-012. Unidade da rede Vino! na Vila Yara. Centenas de vinhos em taça ou garrafa, escolhidos direto da estante, com preço da taça proporcional à quantidade servida; pratos em porções para compartilhar, com sugestão de harmonização.. Atendimento pelo WhatsApp (11) 96590-5788.
+
+## Dados do negócio
+
+- Endereço: R. Dr. Paulo Ferraz da Costa Aguiar, 139 - Vila Yara, Osasco - SP, 06020-012
+- Horário: Ter a sex, 18h às 23h30; sáb, 12h às 16h e 18h às 23h30; dom e seg, fechado
+- WhatsApp: (11) 96590-5788 (https://wa.me/5511965905788)
+- Instagram: https://www.instagram.com/vinoosasco/
+
+## Serviços
+
+- Vinhos por taça ou garrafa (preço da taça proporcional)
+- Pratos para compartilhar, risotos, massas e carnes
+- Reservas e comemorações pelo WhatsApp
+
+## Páginas
+
+- [Página inicial](https://{{DOMINIO}}/)
+- [Política de Privacidade](https://{{DOMINIO}}/politica-de-privacidade.html)
