@@ -26,8 +26,8 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
-  <link rel="stylesheet" href="assets/css/styles.css?v=202610281355">
-  <script src="assets/js/main.js?v=202610281355" defer></script>
+  <link rel="stylesheet" href="assets/css/styles.css?v=202611101936">
+  <script src="assets/js/main.js?v=202611101936" defer></script>
 
   <script type="application/ld+json">
   {
@@ -92,6 +92,7 @@
       <ul class="flex items-center gap-8 text-base font-semibold">
         <li><a href="#sobre" class="hover:text-acento">O Vino!</a></li>
         <li><a href="#cardapio" class="hover:text-acento">Cardápio</a></li>
+        <li><a href="#casa" class="hover:text-acento">A casa</a></li>
         <li><a href="#galeria" class="hover:text-acento">Você no Vino!</a></li>
         <li><a href="#depoimentos" class="hover:text-acento">Avaliações</a></li>
         <li><a href="#localizacao" class="hover:text-acento">Como chegar</a></li>
@@ -115,9 +116,9 @@
 
 <main id="conteudo">
 <!-- SECTION: hero -->
-<!-- Protótipo: foto do Instagram. Antes da entrega, trocar por foto original em alta (checklist-imagens.md). -->
+<!-- Protótipo: fotos de origem a confirmar (briefing, seção 9). Antes da entrega, conferir autorização e resolução. -->
 <section id="inicio" class="bg-vermelho text-creme" aria-labelledby="hero-titulo">
-  <div class="container-lp grid gap-10 pt-10 pb-14 md:pt-16 md:pb-20 lg:grid-cols-12 lg:items-center lg:gap-12">
+  <div class="container-lp grid gap-12 pt-10 pb-14 md:pt-16 md:pb-20 lg:min-h-[calc(100svh-5rem)] lg:grid-cols-12 lg:items-center lg:gap-12">
     <div class="lg:col-span-7">
       <img src="assets/img/logo-creme.webp" alt="" width="755" height="479" class="w-56 md:w-80 lg:w-[24rem]">
       <h1 id="hero-titulo" class="mt-8 max-w-[18ch] text-4xl leading-[1.02] font-extrabold text-balance md:text-5xl lg:text-[3.6rem]">
@@ -134,13 +135,18 @@
       <p class="mt-8 text-base">Ter a sex, 18h às 23h30 · Sáb, 12h às 16h e 18h às 23h30</p>
     </div>
 
-    <img src="assets/img/hero-1600.webp"
-         srcset="assets/img/hero-800.webp 800w, assets/img/hero-1600.webp 1080w"
-         sizes="(min-width: 1024px) 34vw, 100vw"
-         width="1080" height="1922"
-         alt="Risoto servido em prato de cerâmica, finalizado com um ramo de alecrim"
-         fetchpriority="high"
-         class="foto-arco aspect-[4/5] w-full object-cover sm:aspect-[3/4] lg:col-span-5">
+    <!-- Arco: o neon "All we need is vino!" ao lado da adega. Prato visto de cima em círculo, como um pires sobre a foto. -->
+    <div class="relative mx-auto w-full max-w-md pb-10 pl-10 sm:pb-12 sm:pl-14 lg:col-span-5 lg:max-w-none">
+      <img src="assets/img/hero-800.webp"
+           width="680" height="907"
+           alt="Neon All we need is vino! na parede do salão, ao lado das estantes de vinho"
+           fetchpriority="high"
+           class="foto-arco aspect-[3/4] w-full object-cover">
+      <img src="assets/img/prato-sorvete-manjericao-600.webp"
+           width="600" height="600"
+           alt="Sorvete de manjericão com coulis de morango, visto de cima"
+           class="absolute bottom-0 left-0 w-[42%] rounded-full border-[6px] border-creme object-cover shadow-[0_12px_30px_rgb(0_0_0/0.35)] sm:border-8">
+    </div>
   </div>
 </section>
 <!-- /SECTION: hero -->
@@ -360,6 +366,43 @@
   </div>
 </section>
 <!-- /SECTION: servicos -->
+
+<!-- SECTION: galeria-casa -->
+<!-- Fotos da casa, dos pratos e da adega. Mosaico: g = 2×2, t = 1×2 (retrato), w = 2×1 (panorâmica).
+     A ordem fecha cada faixa de 4 colunas no desktop; no celular (2 colunas) o grid-flow-dense tapa os buracos
+     e as 2 últimas fotos em retrato ficam ocultas para a galeria não ficar longa demais. -->
+<section id="casa" class="bg-marca py-16 text-creme md:py-24" aria-labelledby="casa-titulo">
+  <div class="container-lp">
+    <div class="grid gap-6 md:grid-cols-12 md:items-end">
+      <h2 id="casa-titulo" class="text-4xl leading-none font-extrabold uppercase md:col-span-7 md:text-6xl">A casa, a mesa e a adega</h2>
+      <p class="max-w-[48ch] leading-relaxed md:col-span-5">O salão de vidro na Vila Yara, as estantes abertas para você escolher o rótulo e o que sai da cozinha para dividir com a mesa.</p>
+    </div>
+
+    <ul class="mt-12 grid grid-flow-dense auto-rows-[9rem] grid-cols-2 gap-3 md:auto-rows-[12rem] lg:auto-rows-[10.5rem] lg:grid-cols-4 lg:gap-4" aria-label="Fotos do Vino! Osasco: salão, pratos e adega">
+      <li class="col-span-2 row-span-2"><img src="assets/img/casa-fachada-noite-600.webp" srcset="assets/img/casa-fachada-noite-600.webp 600w, assets/img/casa-fachada-noite.webp 1200w" sizes="(min-width: 1152px) 35rem, (min-width: 1024px) 50vw, 100vw" width="1200" height="800" alt="Fachada do Vino! à noite, com o letreiro em neon rosa e o salão iluminado" loading="lazy" decoding="async" class="h-full w-full object-cover"></li>
+      <li class="row-span-2"><img src="assets/img/prato-polenta-ragu-costela-600.webp" srcset="assets/img/prato-polenta-ragu-costela-600.webp 600w, assets/img/prato-polenta-ragu-costela.webp 765w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="765" height="1020" alt="Polenta cremosa com ragú de costela e farofinha de alho na panela de ferro" loading="lazy" decoding="async" class="h-full w-full object-cover"></li>
+      <li class="row-span-2"><img src="assets/img/casa-brinde-tintos-600.webp" srcset="assets/img/casa-brinde-tintos-600.webp 600w, assets/img/casa-brinde-tintos.webp 680w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="680" height="1020" alt="Duas taças de vinho tinto num brinde, à luz de vela" loading="lazy" decoding="async" class="h-full w-full object-cover"></li>
+      <li class="row-span-2"><img src="assets/img/casa-salao-dia-600.webp" srcset="assets/img/casa-salao-dia-600.webp 600w, assets/img/casa-salao-dia.webp 680w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="680" height="1020" alt="Salão de dia, com mesas postas junto às janelas de vidro" loading="lazy" decoding="async" class="h-full w-full object-cover"></li>
+      <li class="row-span-2"><img src="assets/img/prato-panela-de-ferro-600.webp" srcset="assets/img/prato-panela-de-ferro-600.webp 600w, assets/img/prato-panela-de-ferro.webp 680w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="680" height="1020" alt="Panela de ferro com batatas, alho assado e brócolis, ao lado de uma fonduta" loading="lazy" decoding="async" class="h-full w-full object-cover"></li>
+      <li class="col-span-2"><img src="assets/img/casa-fachada-panoramica-600.webp" srcset="assets/img/casa-fachada-panoramica-600.webp 600w, assets/img/casa-fachada-panoramica.webp 1200w" sizes="(min-width: 1152px) 35rem, (min-width: 1024px) 50vw, 100vw" width="1200" height="800" alt="Fachada da casa à noite vista do estacionamento, com o letreiro vino!" loading="lazy" decoding="async" class="h-full w-full object-cover"></li>
+      <li class="col-span-2"><img src="assets/img/prato-tabua-de-queijos-600.webp" srcset="assets/img/prato-tabua-de-queijos-600.webp 600w, assets/img/prato-tabua-de-queijos.webp 1200w" sizes="(min-width: 1152px) 35rem, (min-width: 1024px) 50vw, 100vw" width="1200" height="800" alt="Tábua de queijos com geleias no balcão" loading="lazy" decoding="async" class="h-full w-full object-cover"></li>
+      <li class="row-span-2"><img src="assets/img/prato-torta-caramelo-600.webp" srcset="assets/img/prato-torta-caramelo-600.webp 600w, assets/img/prato-torta-caramelo.webp 765w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="765" height="1020" alt="Fatia de torta com chantilly e calda de caramelo" loading="lazy" decoding="async" class="h-full w-full object-cover"></li>
+      <li class="col-span-2 row-span-2"><img src="assets/img/casa-brinde-mesa-600.webp" srcset="assets/img/casa-brinde-mesa-600.webp 600w, assets/img/casa-brinde-mesa.webp 1200w" sizes="(min-width: 1152px) 35rem, (min-width: 1024px) 50vw, 100vw" width="1200" height="800" alt="Cliente erguendo uma taça de vinho branco diante de uma mesa cheia de pratos" loading="lazy" decoding="async" class="h-full w-full object-cover"></li>
+      <li class="row-span-2"><img src="assets/img/casa-adega-taca-600.webp" srcset="assets/img/casa-adega-taca-600.webp 600w, assets/img/casa-adega-taca.webp 765w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="765" height="1020" alt="Taça de vinho branco sobre o jogo americano, com as estantes da adega ao fundo" loading="lazy" decoding="async" class="h-full w-full object-cover"></li>
+      <li class="row-span-2"><img src="assets/img/prato-mesa-vista-de-cima-600.webp" srcset="assets/img/prato-mesa-vista-de-cima-600.webp 600w, assets/img/prato-mesa-vista-de-cima.webp 680w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="680" height="1020" alt="Mesa vista de cima com risoto, gratinado e panela de ferro" loading="lazy" decoding="async" class="h-full w-full object-cover"></li>
+      <li class="row-span-2 max-lg:hidden"><img src="assets/img/prato-tartare-focaccia-600.webp" srcset="assets/img/prato-tartare-focaccia-600.webp 600w, assets/img/prato-tartare-focaccia.webp 765w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="765" height="1020" alt="Tartare com fatias de focaccia e uma taça de vinho branco" loading="lazy" decoding="async" class="h-full w-full object-cover"></li>
+      <li class="row-span-2"><img src="assets/img/casa-espumantes-vino-600.webp" srcset="assets/img/casa-espumantes-vino-600.webp 600w, assets/img/casa-espumantes-vino.webp 680w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="680" height="1020" alt="Garrafas de espumante com rótulo vino! na penumbra" loading="lazy" decoding="async" class="h-full w-full object-cover"></li>
+      <li class="row-span-2 max-lg:hidden"><img src="assets/img/casa-mesa-posta-600.webp" srcset="assets/img/casa-mesa-posta-600.webp 600w, assets/img/casa-mesa-posta.webp 680w" sizes="(min-width: 1152px) 17rem, (min-width: 1024px) 25vw, 50vw" width="680" height="1020" alt="Mesa posta com guardanapo vino!, talheres e taças" loading="lazy" decoding="async" class="h-full w-full object-cover"></li>
+    </ul>
+
+    <div class="mt-12 flex flex-col items-start gap-5 border-t-4 border-creme pt-8 md:flex-row md:items-center md:justify-between">
+      <p class="max-w-[52ch] text-xl leading-snug font-semibold">Ficou com vontade? A mesa é sua.</p>
+      <a href="https://wa.me/5511965905788?text=Ol%C3%A1!%20Vi%20as%20fotos%20no%20site%20e%20gostaria%20de%20reservar%20uma%20mesa%20no%20Vino!%20Osasco." target="_blank" rel="noopener"
+         class="btn btn-claro btn-lg uppercase tracking-wide" data-track="whatsapp" data-origem="galeria-casa">Reservar mesa pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+<!-- /SECTION: galeria-casa -->
 
 <!-- SECTION: galeria -->
 <!-- Série "Você no Vino! Osasco" do Instagram da casa. Proporção 3/4 (a do post) para não cortar a legenda da arte.
